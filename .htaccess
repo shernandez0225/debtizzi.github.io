@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^agents become-an-agent.html 
