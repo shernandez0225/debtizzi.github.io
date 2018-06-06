@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+
+
+
+.toggle-calendar{width:100%;float: left;}
