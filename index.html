@@ -289,29 +289,8 @@ Review your report
 					<!-- End: Map  -->
                     <div class="col-lg-12 p0">
                         <!--  Contact Form  -->
-			    <form name="contact" method="POST" netlify>
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form
-			    
                         <div class="contact-form aff-late-form">
-                            <form method="post"  id="contact-form" name="learn-more-home" netlify>
+                            <form method="post" action="mail.php" id="contact-form" netlify>
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <input class="con-field" required name="Name" id="name" type="text" placeholder="Enter Name">
