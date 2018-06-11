@@ -359,32 +359,65 @@ There is NO cost to Get Started, but you have options if you want to make more f
           <div class="col-lg-12 p0">
                         <!--  Contact Form  -->
                         <div class="contact-form aff-late-form">
-                            <form method="post" netlify name="Book an appointment"  action="mail.php" id="contact-form">
+                            <form method="post" netlify name="Bookmodal" action="mail.php" id="contact-form" onsubmit="return testvishal('Bookmodal');">
                                 <div class="row">
-                                    <div class="col-lg-12">
-                                        <input class="con-field" name="Name" required id="name" type="text" placeholder="Enter Name">
-                                    </div>                                 
+                                    <div class="col-lg-6">
+                                        <input class="con-field" name="Name"  id="appmodelname" type="text" placeholder="Name">
+										<span class="error nameerror"></span>
+                                    </div>
+									<div class="col-lg-6">
+                                        <input class="con-field" name="LastName"  id="appmodellname" type="text" placeholder="Last Name">
+										<span class="error lnameerror"></span>
+                                    </div>
                                    
+									<!--<div class="col-lg-12">
+                                        <input class="con-field" name="Nmail" required id="appmodelemail1" type="email" placeholder="Enter Email">
+										<span class="error" id="appmodellemailerror"></span>
+                                    </div>-->
 									<div class="col-lg-12">
-                                        <input class="con-field" name="Nmail" required id="email1" type="email" placeholder="Enter Email">
+                                        <input class="con-field" name="Phone"  id="appmodelmobile" onkeypress="return isNumber(event);" type="text" placeholder="Telephone number">
+										<span class="error mobileerror"></span>
                                     </div>
 									<div class="col-lg-12">
-                                        <input class="con-field" name="Phone" required id="email" type="text" placeholder="Telephone number">
+                                        <select class="con-field" name="Debt"  id="appmodeldebt">
+										<option value="">Select Debt</option>
+										<option value="15000">10,000-15,000</option>
+										<option value="20000">15,000-20,000</option>
+										<option value="25000">20,000-25,000</option>
+										<option value="30000">25,000-30,000</option>
+										<option value="35000">30,000-35,000</option>
+										<option value="40000">35,000-40,000</option>
+										<option value="50000">40,000-50,000</option>
+										<option value="50001">More than 50,000</option>
+										</select>
+										<span class="error debteerror"></span>
+                                    </div>
+									<div class="col-lg-4">
+                                        <input class="con-field" name="City"  id="appmodelcity" type="text" placeholder="City">
+										<span class="error cityerror"></span>
+                                    </div>
+									<div class="col-lg-4">
+                                        <input class="con-field" name="State"  id="appmodelstate" type="text" placeholder="State">
+										<span class="error stateerror"></span>
+                                    </div>
+									<div class="col-lg-4">
+                                        <input class="con-field" name="Zipcode"  id="appmodelzipcode" type="text" placeholder="Telephone number">
+										<span class="error zipcodeerror"></span>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <textarea class="con-field" name="Message" required id="message" rows="6" placeholder="Your Message"></textarea>
-                                       
+                                        <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
+                                       <span class="error addresserror"></span>
 										
                                     </div> 
 									
                                 </div>
                           
 							<ul class="conditions"> 
-							  <li>Minimum debt must be of $10,000</li>
+							  <!--<li>Minimum debt must be of $10,000</li>
 							  <li>No  Georgia address that owes more than $15,000 in unsecured debt</li>
-							  <li>If they reside in any of the following  states: Colorado, Connecticut, Georgia, Illinois, Kansas, Minnesota, New Hampshire, North Carolina, North Dakota, Ohio, Oregon, South Carolina, Washington (state), Washington DC (not a state), West Virginia, Wisconsin, Vermont and owe less than 15,000 in unsecured debt, they can’t do it.</li>
+							  <li>If they reside in any of the following  states: Colorado, Connecticut, Georgia, Illinois, Kansas, Minnesota, New Hampshire, North Carolina, North Dakota, Ohio, Oregon, South Carolina, Washington (state), Washington DC (not a state), West Virginia, Wisconsin, Vermont and owe less than 15,000 in unsecured debt, they can’t do it.</li>-->
 							  
 							  <li style="margin-top:5px;"><b>We DO NOT Offer Relief For:</b></li>
 							  
@@ -402,7 +435,7 @@ There is NO cost to Get Started, but you have options if you want to make more f
 							
 							<div class="col-lg-12">
 							<div class="submit-area text-right">
-                                            <input type="submit" id="submit-contact"  name="submit-appointment" class="btn-alt" value="Book">                                            
+							<input type="submit" id="submit-contact"  name="submit-appointment" class="btn-alt" value="Book">                                            
                                         </div>
 							</div>
 
@@ -416,10 +449,7 @@ There is NO cost to Get Started, but you have options if you want to make more f
       
     </div>
   </div>
-  
-
-
-
+  <script src="js/Frmsubmit.js"></script>
     <!-- Start:Footer Section 
 ==================================================-->
     <footer class="footer-section">
