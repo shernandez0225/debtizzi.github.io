@@ -17,7 +17,7 @@ if(isset($_POST['Learn-more-home'])){
 	foreach ($_POST as $key => $value){
     $message .= "<b> ".htmlspecialchars($key)."</b> : ".htmlspecialchars($value)."<br>";
 }
-mail('sal@debtizzi.com,richard@debtizzi.com,r.rowe@debtdiscounts.com', 'Agent Inquiry', $message,$headers);
+mail('sal@debtizzi.com,richard@debtizzi.com,r.rowe@debtdiscounts.com', 'Inquiry From Client', $message,$headers);
 
 //echo "test";
 }	
