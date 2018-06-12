@@ -20,7 +20,7 @@ if(isset($_POST['submit-appointment'])){
 }
 //mail('sal@debtizzi.com,richard@debtizzi.com,r.rowe@debtdiscounts.com', 'Inquiry from client', $message,$headers);
 mail('vishal@virtualheight.com', 'Inquiry from client', $message,$headers);
-//echo "test";
+echo "test1";
 }
 
 
@@ -40,8 +40,8 @@ if(isset($_POST['Learn-more-home'])){
 }
 //mail('sal@debtizzi.com,richard@debtizzi.com,r.rowe@debtdiscounts.com', 'Inquiry From Client', $message,$headers);
 mail('vishal@virtualheight.com', 'Inquiry from client', $message,$headers);
-//echo "test";
+echo "test";
 }	
-header("location:index.html?message=success");
+//header("location:index.html?message=success");
 die();
 ?>
