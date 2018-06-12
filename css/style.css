@@ -725,7 +725,7 @@
  
  .navigation {
      background-color: #043980;
-     z-index: 10;
+     z-index: 3000;
      position: relative;
  }
  .is-sticky .navigation {
