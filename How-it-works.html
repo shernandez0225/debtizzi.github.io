@@ -99,7 +99,7 @@
                       
                       
                       
-					  <li><a  href="become-an-agent.html">Become an Agent</a> </li>
+					  <li><a  href="agents.html">Become an Agent</a> </li>
                         
                     </ul>
 					</div>
@@ -173,6 +173,8 @@
                                         <input class="con-field" name="Phone"  id="appmodelmobile" onkeypress="return isNumber(event);" type="text" placeholder="Telephone number">
 										<span class="error mobileerror"></span>
                                     </div>
+									
+									
 									<div class="col-lg-12">
                                         <select class="con-field" name="Debt"  id="appmodeldebt">
 										<option value="">Select Debt</option>
@@ -187,12 +189,38 @@
 										</select>
 										<span class="error debteerror"></span>
                                     </div>
+									<div class="col-lg-12">
+                                         <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
+                                       <span class="error addresserror"></span>
+                                    </div>
 									<div class="col-lg-4">
                                         <input class="con-field" name="City"  id="appmodelcity" type="text" placeholder="City">
+
 										<span class="error cityerror"></span>
                                     </div>
 									<div class="col-lg-4">
-                                        <input class="con-field" name="State"  id="appmodelstate" type="text" placeholder="State">
+                                      
+										<select class="con-field" name="State"  id="appmodelstate">
+										<option value="">Select State</option>
+										<option value="Colorado">Colorado </option>
+										<option value="Connecticut">Connecticut </option>
+										<option value="Georgia">Georgia</option>
+										<option value="Illinois">Illinois</option>
+										<option value="Kansas">Kansas</option>
+										<option value="Minnesota">Minnesota</option>
+										<option value="New Hampshire">New Hampshire</option>
+										<option value="North Carolina">North Carolina</option>
+										<option value="North Dakota">North Dakota</option>
+										<option value="Ohio">Ohio</option>
+										<option value="Oregon">Oregon</option>
+										<option value="South Carolina">South Carolinaa</option>
+										<option value="Washington">Washington</option>
+										<option value="Washington DC">Washington DC</option>
+										<option value="West Virginia">West Virginia</option>
+										<option value="Wisconsin">Wisconsin</option>
+										<option value="Vermont">Vermont</option>
+										
+										</select>
 										<span class="error stateerror"></span>
                                     </div>
 									<div class="col-lg-4">
@@ -200,10 +228,30 @@
 										<span class="error zipcodeerror"></span>
                                     </div>
                                 </div>
+								<ul class="conditions"> 
+							  <!--<li>Minimum debt must be of $10,000</li>
+							  <li>No  Georgia address that owes more than $15,000 in unsecured debt</li>
+							  <li>If they reside in any of the following  states: Colorado, Connecticut, Georgia, Illinois, Kansas, Minnesota, New Hampshire, North Carolina, North Dakota, Ohio, Oregon, South Carolina, Washington (state), Washington DC (not a state), West Virginia, Wisconsin, Vermont and owe less than 15,000 in unsecured debt, they can’t do it.</li>-->
+							  
+							  <li style="margin-top:5px;"><b>We DO NOT Offer Relief For:</b></li>
+							  
+								<ul class="conditions-second">
+							    <div class="col-lg-6">
+							    <li>IRS Tax Debt</li>
+							    <li>Child Support</li>
+								</div>
+								<div class="col-lg-6">
+							    <li>Federal Student Loans</li>
+							    <li>Credit Union Debt</li>
+								</div>
+								</ul>
+							  
+							  
+							  
+							</ul>
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
-                                       <span class="error addresserror"></span>
+                                       
 										<div class="submit-area">
                                             <input type="submit" name="Learn-more-home" id="submit-contact" class="btn-alt" value="Learn More">
                                             
@@ -334,6 +382,11 @@
                                         <input class="con-field" name="Phone"  id="appmodelmobile" onkeypress="return isNumber(event);" type="text" placeholder="Telephone number">
 										<span class="error mobileerror"></span>
                                     </div>
+									 <div class="col-lg-12">
+                                        <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
+                                       <span class="error addresserror"></span>
+										
+                                    </div> 
 									<div class="col-lg-12">
                                         <select class="con-field" name="Debt"  id="appmodeldebt">
 										<option value="">Select Debt</option>
@@ -353,22 +406,36 @@
 										<span class="error cityerror"></span>
                                     </div>
 									<div class="col-lg-4">
-                                        <input class="con-field" name="State"  id="appmodelstate" type="text" placeholder="State">
+                                      
+										<select class="con-field" name="State"  id="appmodelstate">
+										<option value="">Select State</option>
+										<option value="Colorado">Colorado </option>
+										<option value="Connecticut">Connecticut </option>
+										<option value="Georgia">Georgia</option>
+										<option value="Illinois">Illinois</option>
+										<option value="Kansas">Kansas</option>
+										<option value="Minnesota">Minnesota</option>
+										<option value="New Hampshire">New Hampshire</option>
+										<option value="North Carolina">North Carolina</option>
+										<option value="North Dakota">North Dakota</option>
+										<option value="Ohio">Ohio</option>
+										<option value="Oregon">Oregon</option>
+										<option value="South Carolina">South Carolinaa</option>
+										<option value="Washington">Washington</option>
+										<option value="Washington DC">Washington DC</option>
+										<option value="West Virginia">West Virginia</option>
+										<option value="Wisconsin">Wisconsin</option>
+										<option value="Vermont">Vermont</option>
+										
+										</select>
 										<span class="error stateerror"></span>
                                     </div>
 									<div class="col-lg-4">
-                                        <input class="con-field" name="Zipcode"  id="appmodelzipcode" type="text" placeholder="Telephone number">
+                                        <input class="con-field" name="Zipcode"  id="appmodelzipcode" type="text" placeholder="Zipcode">
 										<span class="error zipcodeerror"></span>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
-                                       <span class="error addresserror"></span>
-										
-                                    </div> 
-									
-                                </div>
+                               
                           
 							<ul class="conditions"> 
 							  <!--<li>Minimum debt must be of $10,000</li>

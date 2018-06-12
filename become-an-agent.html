@@ -166,25 +166,103 @@ There is NO cost to Get Started, but you have options if you want to make more f
                         <div class="contact-form aff-late-form">
                             <form method="post" action="mail.php" netlify name="become an agent form"  id="contact-form">
                                 <div class="row">
-                                    <div class="col-lg-12">
-                                        <input class="con-field" required name="Name" id="name" type="text" placeholder="First Name">
+                                    <div class="col-lg-6">
+                                        <input class="con-field" name="Name" id="name" type="text" placeholder="Name">
+										<span class="error nameerror"></span>
                                     </div>
-                                    
-                                    <div class="col-lg-12">
-                                        <input class="con-field" required name="Email" id="email" type="text" placeholder="Email">
+									<div class="col-lg-6">
+                                        <input class="con-field"  name="LastName" id="name" type="text" placeholder="Last Name">
+										<span class="error lnameerror"></span>
                                     </div>
 									<div class="col-lg-12">
-                                        <input class="con-field" required name="Phone" id="email" type="text" placeholder="Phone Number">
+                                        <input class="con-field" name="Phone"  id="appmodelmobile" onkeypress="return isNumber(event);" type="text" placeholder="Telephone number">
+										<span class="error mobileerror"></span>
+                                    </div>
+									
+									
+									<div class="col-lg-12">
+                                        <select class="con-field" name="Debt"  id="appmodeldebt">
+										<option value="">Select Debt</option>
+										<option value="15000">10,000-15,000</option>
+										<option value="20000">15,000-20,000</option>
+										<option value="25000">20,000-25,000</option>
+										<option value="30000">25,000-30,000</option>
+										<option value="35000">30,000-35,000</option>
+										<option value="40000">35,000-40,000</option>
+										<option value="50000">40,000-50,000</option>
+										<option value="50001">More than 50,000</option>
+										</select>
+										<span class="error debteerror"></span>
+                                    </div>
+									<div class="col-lg-12">
+                                         <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
+                                       <span class="error addresserror"></span>
+                                    </div>
+									<div class="col-lg-4">
+                                        <input class="con-field" name="City"  id="appmodelcity" type="text" placeholder="City">
+
+										<span class="error cityerror"></span>
+                                    </div>
+									<div class="col-lg-4">
+                                      
+										<select class="con-field" name="State"  id="appmodelstate">
+										<option value="">Select State</option>
+										<option value="Colorado">Colorado </option>
+										<option value="Connecticut">Connecticut </option>
+										<option value="Georgia">Georgia</option>
+										<option value="Illinois">Illinois</option>
+										<option value="Kansas">Kansas</option>
+										<option value="Minnesota">Minnesota</option>
+										<option value="New Hampshire">New Hampshire</option>
+										<option value="North Carolina">North Carolina</option>
+										<option value="North Dakota">North Dakota</option>
+										<option value="Ohio">Ohio</option>
+										<option value="Oregon">Oregon</option>
+										<option value="South Carolina">South Carolinaa</option>
+										<option value="Washington">Washington</option>
+										<option value="Washington DC">Washington DC</option>
+										<option value="West Virginia">West Virginia</option>
+										<option value="Wisconsin">Wisconsin</option>
+										<option value="Vermont">Vermont</option>
+										
+										</select>
+										<span class="error stateerror"></span>
+                                    </div>
+									<div class="col-lg-4">
+                                        <input class="con-field" name="Zipcode"  id="appmodelzipcode" type="text" placeholder="Zipcode">
+										<span class="error zipcodeerror"></span>
                                     </div>
                                 </div>
+								<ul class="conditions"> 
+							  <!--<li>Minimum debt must be of $10,000</li>
+							  <li>No  Georgia address that owes more than $15,000 in unsecured debt</li>
+							  <li>If they reside in any of the following  states: Colorado, Connecticut, Georgia, Illinois, Kansas, Minnesota, New Hampshire, North Carolina, North Dakota, Ohio, Oregon, South Carolina, Washington (state), Washington DC (not a state), West Virginia, Wisconsin, Vermont and owe less than 15,000 in unsecured debt, they can’t do it.</li>-->
+							  
+							  <li style="margin-top:5px;"><b>We DO NOT Offer Relief For:</b></li>
+							  
+								<ul class="conditions-second">
+							    <div class="col-lg-6">
+							    <li>IRS Tax Debt</li>
+							    <li>Child Support</li>
+								</div>
+								<div class="col-lg-6">
+							    <li>Federal Student Loans</li>
+							    <li>Credit Union Debt</li>
+								</div>
+								</ul>
+							  
+							  
+							  
+							</ul>
                                 <div class="row">
                                     <div class="col-lg-12">
                                        
-                                        <div class="submit-area">
-                                            <input type="submit" id="submit-contact" name="submit-appointment" class="btn-alt" value="Learn More">
-                                            <div id="msg" class="message"></div>
+										<div class="submit-area">
+                                            <input type="submit" name="Learn-more-home" id="submit-contact" class="btn-alt" value="Learn More">
+                                            
                                         </div>
-                                    </div>
+                                    </div> 
+									
                                 </div>
                             </form>
                         </div>
@@ -378,6 +456,11 @@ There is NO cost to Get Started, but you have options if you want to make more f
                                         <input class="con-field" name="Phone"  id="appmodelmobile" onkeypress="return isNumber(event);" type="text" placeholder="Telephone number">
 										<span class="error mobileerror"></span>
                                     </div>
+									 <div class="col-lg-12">
+                                        <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
+                                       <span class="error addresserror"></span>
+										
+                                    </div> 
 									<div class="col-lg-12">
                                         <select class="con-field" name="Debt"  id="appmodeldebt">
 										<option value="">Select Debt</option>
@@ -397,7 +480,28 @@ There is NO cost to Get Started, but you have options if you want to make more f
 										<span class="error cityerror"></span>
                                     </div>
 									<div class="col-lg-4">
-                                        <input class="con-field" name="State"  id="appmodelstate" type="text" placeholder="State">
+                                      
+										<select class="con-field" name="State"  id="appmodelstate">
+										<option value="">Select State</option>
+										<option value="Colorado">Colorado </option>
+										<option value="Connecticut">Connecticut </option>
+										<option value="Georgia">Georgia</option>
+										<option value="Illinois">Illinois</option>
+										<option value="Kansas">Kansas</option>
+										<option value="Minnesota">Minnesota</option>
+										<option value="New Hampshire">New Hampshire</option>
+										<option value="North Carolina">North Carolina</option>
+										<option value="North Dakota">North Dakota</option>
+										<option value="Ohio">Ohio</option>
+										<option value="Oregon">Oregon</option>
+										<option value="South Carolina">South Carolinaa</option>
+										<option value="Washington">Washington</option>
+										<option value="Washington DC">Washington DC</option>
+										<option value="West Virginia">West Virginia</option>
+										<option value="Wisconsin">Wisconsin</option>
+										<option value="Vermont">Vermont</option>
+										
+										</select>
 										<span class="error stateerror"></span>
                                     </div>
 									<div class="col-lg-4">
@@ -405,14 +509,7 @@ There is NO cost to Get Started, but you have options if you want to make more f
 										<span class="error zipcodeerror"></span>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <textarea class="con-field" name="Address"  id="appmodeladdress" rows="6" placeholder="Address"></textarea>
-                                       <span class="error addresserror"></span>
-										
-                                    </div> 
-									
-                                </div>
+                               
                           
 							<ul class="conditions"> 
 							  <!--<li>Minimum debt must be of $10,000</li>
