@@ -1,4 +1,5 @@
 <?php
+die();
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "From: site@debtizzi.com" . "\r\n";
@@ -20,7 +21,7 @@ if(isset($_POST['submit-appointment'])){
 }
 //mail('sal@debtizzi.com,richard@debtizzi.com,r.rowe@debtdiscounts.com', 'Inquiry from client', $message,$headers);
 mail('vishal@virtualheight.com', 'Inquiry from client', $message,$headers);
-echo "test1";
+
 }
 
 
@@ -40,8 +41,8 @@ if(isset($_POST['Learn-more-home'])){
 }
 //mail('sal@debtizzi.com,richard@debtizzi.com,r.rowe@debtdiscounts.com', 'Inquiry From Client', $message,$headers);
 mail('vishal@virtualheight.com', 'Inquiry from client', $message,$headers);
-echo "test";
+
 }	
-//header("location:index.html?message=success");
+header("location:index.html?message=success");
 die();
 ?>
