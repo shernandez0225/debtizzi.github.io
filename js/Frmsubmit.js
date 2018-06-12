@@ -22,7 +22,7 @@ function testvishal(fid){
         var City = document.forms[fid]["City"].value;
         var State = document.forms[fid]["State"].value;
         var Zipcode = document.forms[fid]["Zipcode"].value;
-		var Debt = document.forms[fid]["Debt"].value;
+		var Debt = parseInt(document.forms[fid]["Debt"].value);
         var Address = document.forms[fid]["Address"].value;
 		
 		if(fname == ""){
@@ -59,7 +59,7 @@ function testvishal(fid){
 		}else{
 			if(Debt != "" && State != ""){
 				if(State == "Georgia"){
-					if(Debt >= 15000){
+					if(Debt < 15000){
 						$(".debteerror").html('In Georgia you have to have less than $15,000 in unsecured debt and more than $10,000 in unsecured debt to be eligible');
 					}
 				}else{
