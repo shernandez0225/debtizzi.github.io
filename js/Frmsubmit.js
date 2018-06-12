@@ -24,6 +24,7 @@ function testvishal(fid){
         var Zipcode = document.forms[fid]["Zipcode"].value;
 		var Debt = document.forms[fid]["Debt"].value;
         var Address = document.forms[fid]["Address"].value;
+        var Email = document.forms[fid]["Email"].value;
 		
 		if(fname == ""){
 			temp++;
@@ -53,6 +54,11 @@ function testvishal(fid){
 			temp++;
 			$(".zipcodeerror").html('Required!');
 		}
+		if(Email == ""){
+			temp++;
+			$(".emailerror").html('Required!');
+		}
+		
 		if(Debt == ""){
 			temp++;
 			$(".debteerror").html('Required!');
