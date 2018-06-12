@@ -84,6 +84,7 @@ function testvishal(fid){
 		}
 		
 		if(temp == 0){
+			$(".forallform").attr("action", "mail.php");
 		return true;
 		}else{
 		return false;
