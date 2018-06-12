@@ -3937,7 +3937,7 @@ header.blog-banner {
     color: #fff;
 }
 .contact-form #contact-form .con-field:focus{
-	border-bottom: 1px solid #fff;
+	--border-bottom: 1px solid #fff;
 }
 
 /*----- Testimonial Section v2 -----*/
