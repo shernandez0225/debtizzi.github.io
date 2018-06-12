@@ -74,7 +74,7 @@ function testvishal(fid){
 							
 						}else{
 							temp++;
-							$(".debteerror").html('In (selected state on this list) an unsecured debt of more than $15,000 is required to be eligible');
+							$(".debteerror").html('Based on your state you must have unsecured debt of more than $15,000 to be eligible');
 						}
 					}else{
 						temp++;
